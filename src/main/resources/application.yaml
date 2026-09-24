@@ -1,6 +1,8 @@
 spring:
   application:
     name: estoque
+  server:
+    port: 8082
   datasource:
     url: jdbc:h2:mem:estoque-db
     driver-class-name: org.h2.Driver
@@ -14,3 +16,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  rabbitmq:
+    host: jaragua-01.lmq.cloudamqp.com
+    port: 5671
+    username: nqfzngkq
+    password: z2BmxyOW8KchxggguvYzrc-DGkVUz1tw
+    virtual-host: nqfzngkq
+    ssl:
+      enabled: true
